@@ -1,17 +1,10 @@
-# Code-201-Template
-Template for setting up projects
+# Code 201 Final Project
 
+## Target Practice
 
+A JavaScript based game where the goal is to shoot down ducks. Based on the Nintendo classic "Duck Hunt", our game pays homage to a true classic while also flexing the teams skills at HTML, CSS, and  vanilla JavaScript.
 
-## Follow this template for the README files:
-
-# LAB - Number
-
-## Project Name
-
-I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
-
-### Author: Student/Group Name
+### Authors: Keyan Tabor, Ian F. Shirley, Harper Foley, Gordon P. Reilley Jr
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
