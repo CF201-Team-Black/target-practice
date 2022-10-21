@@ -9,6 +9,7 @@
 
 ## Links and References
 
+* [Team Repo](https://github.com/CF201-Team-Black/Team-Black---Code-201-Group-Project)
 * [Task Tracker](addLink)
 * [Pitch Deck Presentation](https://docs.google.com/presentation/d/1TXv9xfYqeFvqA0LoH6ubqZI5e7Od9U5gJTxhSeMc2E0/edit?usp=sharing)
 
@@ -28,18 +29,26 @@
 Team members want to build competencies in the following areas:
 
 * Keyan
+  * Speaking: Improve public speaking and presentation skills; convey thoughts in clear and concise manner
+  * Collaboration: Generally work alone, so want to learn how work within teams on collaborative projects
 * Ian
+  * Craft Competency: Improve understanding of technical skills we are using in software development
+  * Leader Competency: Improve networking and be more confident to ask for help when needed
 * Gordon
+  * Continuous Improvement: Find better ways to do things that I have already learned how to do one way
+  * Writing Ability: Improve ability to communicate ideas in writing; be able to describe projects/code in technical writing
 * Harper
+  * Delegation: Need to improve ability to delegate on complex, team-oriented projects
+  * Software Project Management: Learn and apply Agile methodologies to software development process
 
 ### Talent Management
 
 Team Members will take primary responsibility for the following:
 
-* Keyan
-* Ian
-* Gordon
-* Harper
+* **Keyan:** Scrum Leader
+* **Ian:** Task Progression & Management
+* **Gordon:** Time Management & Overall Project Progression 
+* **Harper:** Presentation Development & Design
 
 ## Conflict Management
 
