@@ -7,16 +7,21 @@
 * Gordon Reilley
 * Harper Foley
 
+## Links and References
+
+* [Task Tracker](https://docs.google.com/presentation/d/1TXv9xfYqeFvqA0LoH6ubqZI5e7Od9U5gJTxhSeMc2E0/edit?usp=sharing)
+* [Pitch Deck Presentation](addLink)
+
 ## Cooperation
 
 ### Individual Strengths & Weaknesses
 
 | | **Strengths** | **Weaknesses** |
 | --- | --- | --- |
-| Keyan | | |
-| Ian | | | 
-| Gordon | | |
-| Harper | | |
+| **Keyan** | HTML/CSS<br> | JavaScript<br> |
+| **Ian** | HTML/CSS<br>Loops | JS Objects<br>JS Prototypes<br> | 
+| **Gordon** | CSS Grid<br>HTML<br>Reading Code/Research<br> | JS Constructors<br>JS Prototypes<br>JS Loops<br> |
+| **Harper** | HTML Structuring<br>JavaScript<br> | CSS Positioning<br>Color Palettes & Design<br> |
 
 ### Professional Competencies
 
@@ -60,38 +65,36 @@ Team Members will take primary responsibility for the following:
 
 ## Communication Plan
 
-* General availability:
+* **General availability:**
   * Work hours: 9am - 6pm PST
   * Team will be in Remo throughout working hours
   * Team members will be available via Slack throughout the project
-* Communication Methods
+* **Communication Methods**
   * Working Hours
     * Primary: Remo
     * Secondary: Slack
   * After Hours
     * Primary: Slack
     * Secondary: Remo
-* Breaks
+* **Breaks**
   * Lunch: 12pm - 1pm
   * Team members are allowed to take breaks as necessary
-* To create an environment of psychological safety, we established upfront that *all* team members are expected to contribute daily to taking items out of backlog and into completion. All team members are encouraged to reach out for help and discuss openly with one another will working in Remo during working hours.
+* **Psychological Safety**
+  * To create an environment of psychological safety, we established upfront that *all* team members are expected to contribute daily to taking items out of backlog and into completion. All team members are encouraged to reach out for help and discuss openly with one another will working in Remo during working hours.
 
 ## Work Plan
 
-* Daily Standup
+* **Daily Standup**
   * Will occur at 9am - 9:15am
   * Each team member will state what items for the backlog they accomplished the previous day, and what items they will work on today
-* Task Tracking
+* **Task Tracking**
   * Tasks will be tracked via Google Sheets
   * Each morning, team members will take items from the "backlog" and add them to "in progress" under their name
   * Once a task is completed, the responsible team member will remove the task from "in progress" and move it to the "done" column
-* "Meaty" Problems
+* **"Meaty" Problems**
   * Team will break down into pairs to conduct pair programming to tackle difficult problems that we cannot solve during our normal work flow
 
 ## Git Process
-
-* Will you be using a PR review workflow? If so, consider:
-  * How will you communicate that it’s time to merge?
 
 * All documents and files associated with the project, other than out Task Tracker and Pitch Deck, will live on GitHub
   * Links to Task Tracker and Pitch Deck will be pinned in our Slack channel
