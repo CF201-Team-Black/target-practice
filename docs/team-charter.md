@@ -40,33 +40,53 @@ Team Members will take primary responsibility for the following:
 
 ### Conflict Resolution Process
 
-Address: 
-
-* What will be your group’s process to resolve conflict, when it arises?
-* What will your team do if one person is taking over the project and not letting the other members contribute?
-* How will you approach each other and the challenges of the project knowing that it is impossible for all members to be at the exact same place in understanding and skill level?
-* How will you raise concerns to members who are not adequately contributing?
-* How and when will you escalate the conflict if your resolution attempts are unsuccessful?
+* When conflicts arise, the group will hold a whole group discussion to address the issue
+  * Every person *must* weigh in and express an opinion
+  * Conversations will focus on the problem, they will not become personal
+  * At the end of the discussion, the group will hold a vote, majority rules
+    * If a tie arises, call in a TA to break the tie
+* If a team member is taking over the project, other team members will call the behavior to the attention of the group
+  * Team will discuss why they feel the project has been taken over
+  * After a discussion focusing on the behavior, the team will continue on with the project
+  * The offending team member will be allowed one more violation
+  * On the third offense, team will escalate to a TA
+* If a team member is struggling with a task, they shall be allowed to keep working for a maximum of 1 hour before calling a mandatory team meeting in Remo to address the problem
+  * If the problem is not solvable by the team in Remo after 30 minutes, the team shall call a TA to assist
+* If a team member is not contributing to the project, other team members will call the behavior to the attention of the group
+  * Team will discuss why they feel the team member is not contributing and specific tasks they have failed to deliver on
+  * After a discussion focusing on the behavior, the team will continue on with the project
+  * The offending team member will be allowed one more violation
+  * On the third offense, team will escalate to a TA
 
 ## Communication Plan
 
-Address: 
-
-* What hours will you be available to communicate?
-* What platforms will you use to communicate (ie. Slack, phone …)?
-* How often will you take breaks?
-* What is your plan if you start to fall behind?
-* How will you communicate after hours and on the weekend?
-* What is your strategy for ensuring everyone’s voice is heard?
-* How will you ensure that you are creating a safe environment where everyone feels comfortable speaking up?
+* General availability:
+  * Work hours: 9am - 6pm PST
+  * Team will be in Remo throughout working hours
+  * Team members will be available via Slack throughout the project
+* Communication Methods
+  * Working Hours
+    * Primary: Remo
+    * Secondary: Slack
+  * After Hours
+    * Primary: Slack
+    * Secondary: Remo
+* Breaks
+  * Lunch: 12pm - 1pm
+  * Team members are allowed to take breaks as necessary
+* To create an environment of psychological safety, we established upfront that *all* team members are expected to contribute daily to taking items out of backlog and into completion. All team members are encouraged to reach out for help and discuss openly with one another will working in Remo during working hours.
 
 ## Work Plan
 
-Address: 
-
-* Explain your work plan to track whether everyone is contributing equally to all parts of the project, and that each person is working on “meaty” problems.
-* How you will identify tasks, assign tasks, know when they are complete, and manage work in general?
-* What project management tool will be used?
+* Daily Standup
+  * Will occur at 9am - 9:15am
+  * Each team member will state what items for the backlog they accomplished the previous day, and what items they will work on today
+* Task Tracking
+  * Tasks will be tracked via Google Sheets
+  * Each morning, team members will take items from the "backlog" and add them to "in progress" under their name
+  * Once a task is completed, the responsible team member will remove the task from "in progress" and move it to the "done" column
+* "Meaty" Problems
+  * Team will break down into pairs to conduct pair programming to tackle difficult problems that we cannot solve during our normal work flow
 
 ## Git Process
 
