@@ -90,11 +90,17 @@ Team Members will take primary responsibility for the following:
 
 ## Git Process
 
-* What components of your project will live on GitHub?
-* How will you share the repository with your teammates?
-* What is your Git flow?
 * Will you be using a PR review workflow? If so, consider:
-  * How many people must review a PR?
-  * Who merges PRs?
-  * How often will you merge?
   * How will you communicate that it’s time to merge?
+
+* All documents and files associated with the project, other than out Task Tracker and Pitch Deck, will live on GitHub
+  * Links to Task Tracker and Pitch Deck will be pinned in our Slack channel
+* All team members will be added to a new Git Organization and have access to the project repository
+* Git Flow
+  * For development, we will make a working branch and merge all new features onto the working branch
+  * Each team member will will create another branch specific to their feature for development
+  * Before merging into the working branch, the team member will create a pull request and alert the team that a code review is necessary
+    * Alerts will be sent out via Slack or Remo, depending on where the majority of the team is at the time
+  * The pull request *must* be reviewed by a minimum of two other team members
+  * Once the code has been reviewed, the team will merge the feature branch onto the working branch
+  * Once all features are completed, the whole team will approve merging into the main branch
