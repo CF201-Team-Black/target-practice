@@ -25,3 +25,8 @@ A JavaScript based game where the goal is to shoot down ducks. Based on the Nint
 ![image](https://user-images.githubusercontent.com/108432978/197634086-0e3ba829-1e0e-4069-8de7-c85cee9fce98.png)
 ## Leaderboard:
 ![image](https://user-images.githubusercontent.com/108432978/197634201-6d1145d3-1158-41fa-bf7f-594d9f5838fb.png)
+
+
+# Domain Model
+
+![Domain Model - Target Practice](https://user-images.githubusercontent.com/107962287/197636535-02fdc158-4edd-45ef-9632-0d0665e29a1c.png)
