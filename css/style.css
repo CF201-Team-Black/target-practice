@@ -6,3 +6,101 @@
 font-family: 'Press Start 2P', cursive;
 */
 
+body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+#container {
+  width: 60%;
+  height: 50%;
+  /* border: 5px solid; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#logo-container {
+  /* border: 5px solid; */
+  margin: auto;
+}
+
+#logo {
+  width: 50vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.page-links {
+  font-family: 'Press Start 2P', cursive;
+  color: brown;
+  text-decoration: none;
+}
+
+.page-links:hover {
+  color: blue;
+  cursor: url('/img/crosshairs.png'), auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form-text {
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+  text-align: center;
+}
+
+label:first-child {
+  border: 3px inset black;
+}
+
+label:first-child:hover {
+  cursor: text;
+}
+
+button {
+  margin: 20px;
+  background-color: black;
+  color: green;
+}
+
+button:hover {
+  color: white;
+  cursor: url('/img/crosshairs.png'), auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
