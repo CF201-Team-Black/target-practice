@@ -41,6 +41,7 @@ body {
 
 #logo {
   width: 50vw;
+  margin: -100px;
 }
 
 ul {
@@ -59,11 +60,12 @@ li {
   font-family: 'Press Start 2P', cursive;
   color: brown;
   text-decoration: none;
+  padding: 10px;
 }
 
 .page-links:hover {
   color: blue;
-  cursor: url('/img/crosshairs.png'), auto;
+  cursor: url('../img/crosshairs10px.png'), auto;
 }
 
 form {
@@ -95,7 +97,7 @@ button {
 
 button:hover {
   color: white;
-  cursor: url('/img/crosshairs.png'), auto;
+  cursor: url('../img/crosshairs10px.png'), auto;
 }
 
 footer {
