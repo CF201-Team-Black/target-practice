@@ -3,7 +3,8 @@
   <head>
     <meta lang="en" charset="utf-8">
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/game.css">
     <title>Target Practice</title>
   </head>
   <body>
@@ -11,9 +12,9 @@
       <h1>Target Practice</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Leaderboard</li>
-          <li>About Us</li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="scores.html">Leaderboard</a></li>
+          <li><a href="about.html">About Us</a></li>
         </ul>
       </nav>
     </header>
@@ -29,13 +30,13 @@
         </ol>
       </div>
       <div id="playArea">
-        <img id="backGround" src="/img/background.png" alt="country field">
+        <img id="background" src="/img/background.png" alt="country field">
         <img id="target" src="/img/birdtarget.png" alt="flying bird">
         <section id="scoreboard">
           <p>Score:</p>
           <p>Level:</p>
         </section>
-        <button>Start</button>
+        <button id="start">Start</button>
       </div>
       <div id="leaderboardRight">
         <h3>Top 10 Scores</h3>

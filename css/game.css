@@ -1,0 +1,91 @@
+/* For highlight all elements with a red border for ease of formatting with CSS */
+
+* { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+body { margin: 0.5%;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+
+/* Header Area */
+header h1 {
+  font-size: xx-large ;
+  margin: 0.5% 0;
+  text-align: center;
+}
+
+nav {
+  font-size: large;
+  font-weight: bold;
+}
+
+nav li:hover {
+  color: rgb(115, 205, 115);
+  background-color: black;
+}
+
+nav li {
+  display: inline-flex;
+  background-color: rgb(115, 205, 115);
+  margin: 0.5% 0;
+  padding: 0.25rem;
+}
+
+nav a:link {text-decoration: none;}
+
+nav a:visited {
+  text-decoration: none;
+}
+
+
+/* Game Section */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+#playArea {
+  /* position: relative; */
+  cursor: url('../img/crosshairs10px.png'), crosshair;
+}
+
+#background {
+  min-height: 400px;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+#scoreboard {
+  z-index: 1;
+  width: 20%;
+  position: absolute;
+  border: solid 3px black;
+  padding: 0.5%;
+}
+
+#target {
+  z-index: 2;
+}
+
+#start {
+  z-index: 3;
+}
+
+#rulesLeft h3, #leaderboardRight h3 {
+  color: black;
+  text-decoration: underline;
+}
+
+#rulesLeft li {
+  padding: 5%;
+}
+
+
+/* Footer */
+footer {
+  border: solid black 3px;
+  text-align: center;
+  margin-top: 1%;
+}
