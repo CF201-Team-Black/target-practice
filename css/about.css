@@ -1,8 +1,13 @@
-body{
-    background-image: url(../img/);
+#background{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
 }
 
 h1{
+   /*display: inline-block;*/
+    width: 70%; 
     font-size: 75px;
     text-align: center;
 }
@@ -13,10 +18,19 @@ header img{
 width: 200px;
 }
 
+#banner{
+    display:flex;
+    flex-grow: 4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 nav{
     width: 25%;
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 nav ul{
     display: flex;
@@ -39,8 +53,8 @@ a:hover{
 
 header{
     margin-bottom: 50px;
+    display: flex;
 }
-
 main div{
     display: flex;
     text-align: left;
