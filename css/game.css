@@ -48,29 +48,41 @@ main {
 #playArea {
   /* position: relative; */
   cursor: url('../img/crosshairs10px.png'), crosshair;
+  position: relative;
 }
 
 #background {
   min-height: 400px;
-  height: 100%;
-  position: relative;
+  /* height: 100%; */
   z-index: 0;
 }
 
 #scoreboard {
   z-index: 1;
   width: 20%;
+  bottom: 5%;
+  left: 1%;
   position: absolute;
   border: solid 3px black;
+  background-color: lightgray;
+  font-weight: bold;
   padding: 0.5%;
 }
 
 #target {
   z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 #start {
   z-index: 3;
+  position: absolute;
+  left: 25%;
+  font-size: medium;
+  font-weight: bold;
+  bottom: 7%;
 }
 
 #rulesLeft h3, #leaderboardRight h3 {
