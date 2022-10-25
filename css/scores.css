@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
-body {
-  background-image: url("../img/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
 header {
