@@ -97,7 +97,7 @@ button {
 
 button:hover {
   color: white;
-  cursor: url('../img/crosshairs10px.png'), auto;
+  cursor: url('../img/crosshairs10px.png') 5 5, auto;
 }
 
 footer {
