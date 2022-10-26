@@ -6,6 +6,8 @@ console.log('hello');
 
 let leaderboard = [];
 let userSubmit = document.getElementById('button');
+let currentUser = null;
+console.log(`First log: ${currentUser}`);
 
 // CONSTRUCTOR
 
@@ -20,6 +22,9 @@ function enterUsername(e) {
   e.preventDefault();
   
   let clickedPlay = e.target.name.value;
+  currentUser = clickedPlay;
+
+  console.log(`currentUser: ${currentUser}`);
   console.log(`clickedPlay: ${clickedPlay}`);
   
   let existingLeaderboard = getLeaderboard();
@@ -36,7 +41,9 @@ function enterUsername(e) {
     alert(`Welcome ${clickedPlay}`);
   }
   storeLeaderboard();
+  storeCurrentUser();
   goToGame();
+  console.log(`Final currentUser: ${currentUser}`);
 }
 
 // Gets existing leaderboard from local storage and sets existing leaderboard array to equal the values of storedLeaderboard
@@ -51,6 +58,18 @@ function getLeaderboard() {
 function storeLeaderboard() {
   let strLeaderboard = JSON.stringify(leaderboard);
   localStorage.setItem('localStorageLeaderboard', strLeaderboard);
+}
+
+// Stores away currentUser
+function storeCurrentUser() {
+  let strCurrentUser = JSON.stringify(currentUser);
+  localStorage.setItem('localStorageCurrentUser', strCurrentUser);
+}
+
+// Retrieves currentUser from local storage for use on game page
+function getCurrentUser() {
+  let storedCurrentUser = JSON.parse(localStorage.getItem('localStorageCurrentUser')) || [];
+  return storedCurrentUser;
 }
 
 // Launches game in same window/tab
