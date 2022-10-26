@@ -30,10 +30,11 @@ function playGame(e) {
   } 
   else {
     alert('Game Over. Play again?');
+    storeLeaderboard();
     miss = 3;
     currentScore = 0;
     level = 1;
-    storeLeaderboard();
+    roundAccuracy = 0;
   }
   updateScoreboard();
   updateUserPerformance();
