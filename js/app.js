@@ -9,11 +9,14 @@ let userSubmit = document.getElementById('button');
 let currentUser = null;
 console.log(`First log: ${currentUser}`);
 
+getLeaderboard();
+
 // CONSTRUCTOR
 
 function User(name) {
   this.name = name;
   this.score = 0;
+  this.level = 1;
   leaderboard.push(this);
 }
 
