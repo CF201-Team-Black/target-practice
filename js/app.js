@@ -35,7 +35,7 @@ function enterUsername(e) {
     // console.log(`leaderboard: ${leaderboard}`);
     alert(`Welcome ${clickedPlay}`);
   }
-  storeUser();
+  storeLeaderboard();
   goToGame();
 }
 
@@ -48,7 +48,7 @@ function getLeaderboard() {
 }
 
 // Store leaderboard, not just user info
-function storeUser() {
+function storeLeaderboard() {
   let strLeaderboard = JSON.stringify(leaderboard);
   localStorage.setItem('localStorageLeaderboard', strLeaderboard);
 }
