@@ -12,14 +12,20 @@
   --fourth-x-position: 0px;
 }
 
-body { margin: 0.5%;}
-h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+body { 
+  background-color: black;
+  color: rgb(115, 205, 115);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;}
 
 /* Header Area */
 header h1 {
   font-size: xx-large ;
   margin: 0.5% 0;
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 nav {
@@ -92,10 +98,10 @@ main {
 
 @keyframes zigzag {
   0% {
-    transform: translate(0, 0);
+    transform: translate(0, -100px);
   }
   25% {
-    transform: translate(var(--first-x-position), -125px);
+    transform: translate(var(--first-x-position), -150px);
   }
   50% {
     transform: translate(var(--second-x-position), -250px);
@@ -129,7 +135,10 @@ main {
 
 /* Footer */
 footer {
-  border: solid black 3px;
+  /* border: solid black 3px; */
   text-align: center;
   margin-top: 1%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
