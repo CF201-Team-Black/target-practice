@@ -60,16 +60,17 @@ main {
 
 #playArea {
   /* position: relative; */
-  cursor: url('../img/crosshairs10px.png'), crosshair;
+  cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
   position: relative;
-  width: 800px;
+  width: 1200px;
 }
 
 #background {
   min-height: 400px;
   /* height: 100%; */
   z-index: 0;
-  width: 800px;
+  width: 1200px;
+  -webkit-user-drag: none;
 }
 
 #scoreboard {
@@ -87,13 +88,13 @@ main {
 /* bird/target & animation */
 #target {
   z-index: 2;
-  position: absolute;
   height: 40px;
   position: absolute;
   left: 0;
   bottom: 0;
   margin: none;
-  animation: zigzag 5s linear infinite alternate;
+  -webkit-user-drag: none;
+  animation: zigzag 30s ease-in-out infinite alternate;
 }
 
 @keyframes zigzag {
@@ -101,16 +102,16 @@ main {
     transform: translate(0, -100px);
   }
   25% {
-    transform: translate(var(--first-x-position), -150px);
+    transform: translate(var(--first-x-position), -160px);
   }
   50% {
-    transform: translate(var(--second-x-position), -250px);
+    transform: translate(var(--second-x-position), -320px);
   }
   75% {
-    transform: translate(var(--third-x-position), -375px);
+    transform: translate(var(--third-x-position), -480px);
   }
   100% {
-    transform: translate(var(--fourth-x-position), -460px);
+    transform: translate(var(--fourth-x-position), -640px);
   }
 }
 
