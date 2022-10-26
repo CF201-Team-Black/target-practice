@@ -73,7 +73,7 @@ nav li {
   margin-bottom: 15px;
   padding: 0.25rem;
   border: 2px inset rgb(115, 205, 115);
-
+  font-family: 'Press Start 2P', cursive;
 }
 
 nav a:link {
@@ -83,6 +83,7 @@ nav a:link {
   margin-right: 15px; */
   color:rgb(115, 205, 115);
   cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+  font-size: 0.5em;
 }
 
 
@@ -121,10 +122,12 @@ main {
   bottom: 5%;
   left: 1%;
   position: absolute;
-  border: solid 3px black;
-  background-color: lightgray;
+  border: 3px inset rgb(187, 187, 187);
+  background-color: black;
   font-weight: bold;
   padding: 0.5%;
+  text-align: center;
+  font-family: 'Press Start 2P', serif;
 }
 
 /* bird/target & animation */
@@ -185,19 +188,14 @@ main {
 #rulesLeft h3, #leaderboardRight h3 {
   color: black;
   text-decoration: underline;
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 #rulesLeft li {
   padding: 5%;
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 #leaderboardRight li {
-  outline: 1px solid red;
-  outline-offset: -1px;
+  padding: 5%;
 }
 
 /* Footer */
