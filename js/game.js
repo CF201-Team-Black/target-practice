@@ -14,6 +14,7 @@ alert('Ready? Click "OK" to start.');
 
 getLeaderboard();
 updateScoreboard();
+genTopTen();
 
 function playGame(e) {
   e.preventDefault();
@@ -34,8 +35,8 @@ function playGame(e) {
     miss = 3;
     currentScore = 0;
     level = 1;
-    roundAccuracy = 0;
   }
+  genTopTen();
   updateScoreboard();
   updateUserPerformance();
 }
@@ -89,6 +90,25 @@ function updateUserPerformance() {
     leaderboard[userIndex].level = level;
   }
 }
+
+// Appending to Ordered List on game page
+
+function genTopTen () {
+  let sortedLeaderboard = leaderboard.sort((a,b) => b.score - a.score);
+  let topTenName = document.getElementById('leaderboardName');
+  topTenName.textContent = '';
+  // let topTenScore = document.getElementById('leaderboardScore');
+  for (let i = 0; i < sortedLeaderboard.length; i++) {
+    let lbName = document.createElement('li');
+    lbName.textContent = `${sortedLeaderboard[i].name}: ${sortedLeaderboard[i].score}`;
+    topTenName.appendChild(lbName);
+    // let lbScore = document.createElement('li');
+    // lbScore.textContent = sortedLeaderboard[i].score;
+    // topTenScore.appendChild(lbScore);
+  }
+}
+
+
 
 
 // Event Handeler
