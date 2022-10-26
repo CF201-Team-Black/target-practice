@@ -1,16 +1,18 @@
 'use strict';
 
 let activeUser = getCurrentUser();
-let gamePageLeaderboard = getLeaderboard();
 let hitTarget = document.getElementById('target');
 let missTarget = document.getElementById('background');
 let currentScore = 0;
 let level = 1;
 let miss = 3;
 
-console.log(activeUser);
-console.log(gamePageLeaderboard);
+console.log('activeUser: ', activeUser);
+console.log('leaderboard:', leaderboard);
 
+alert('Ready? Click "OK" to start.');
+
+getLeaderboard();
 updateScoreboard();
 
 function playGame(e) {
@@ -28,12 +30,14 @@ function playGame(e) {
   } 
   else {
     alert('Game Over. Play again?');
+    storeLeaderboard();
     miss = 3;
     currentScore = 0;
+    level = 1;
+    roundAccuracy = 0;
   }
   updateScoreboard();
-  updateUserScore();
-  // updateLocalStorageLeaderboard();
+  updateUserPerformance();
 }
 
 // Updates Whole Scoreboard
@@ -77,13 +81,13 @@ function currentLevel() {
 
 // Finds Username in Leaderboard and Updates Score
 
-function updateUserScore() {
-  // let userIndex = gamePageLeaderboard.map(user => user.name).indexOf(activeUser);
-  // // console.log(userIndex);
-  // // console.log(gamePageLeaderboard[userIndex].score);
-  // gamePageLeaderboard[userIndex].score = currentScore;
-  // console.log(`userScore: ${gamePageLeaderboard[userIndex].score}`);
-  // localStorage.setItem(gamePageLeaderboard[userIndex].score, currentScore);
+function updateUserPerformance() {
+  let userIndex = leaderboard.map(user => user.name).indexOf(activeUser);
+ 
+  if(currentScore > leaderboard[userIndex].score) {
+    leaderboard[userIndex].score = currentScore;
+    leaderboard[userIndex].level = level;
+  }
 }
 
 
