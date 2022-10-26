@@ -5,14 +5,27 @@
   outline-offset: -1px;
 }
 
-body { margin: 0.5%;}
-h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+:root {
+  --first-x-position: 720px;
+  --second-x-position: 75px;
+  --third-x-position: 600px;
+  --fourth-x-position: 0px;
+}
+
+body { 
+  background-color: black;
+  color: rgb(115, 205, 115);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;}
 
 /* Header Area */
 header h1 {
   font-size: xx-large ;
   margin: 0.5% 0;
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 nav {
@@ -49,12 +62,14 @@ main {
   /* position: relative; */
   cursor: url('../img/crosshairs10px.png'), crosshair;
   position: relative;
+  width: 800px;
 }
 
 #background {
   min-height: 400px;
   /* height: 100%; */
   z-index: 0;
+  width: 800px;
 }
 
 #scoreboard {
@@ -69,11 +84,34 @@ main {
   padding: 0.5%;
 }
 
+/* bird/target & animation */
 #target {
   z-index: 2;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: none;
+  animation: zigzag 5s linear infinite alternate;
+}
+
+@keyframes zigzag {
+  0% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(var(--first-x-position), -150px);
+  }
+  50% {
+    transform: translate(var(--second-x-position), -250px);
+  }
+  75% {
+    transform: translate(var(--third-x-position), -375px);
+  }
+  100% {
+    transform: translate(var(--fourth-x-position), -460px);
+  }
 }
 
 #start {
@@ -97,7 +135,10 @@ main {
 
 /* Footer */
 footer {
-  border: solid black 3px;
+  /* border: solid black 3px; */
   text-align: center;
   margin-top: 1%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
