@@ -15,51 +15,48 @@ function User(name) {
   leaderboard.push(this);
 }
 
-// function to get leaderboard from local storage
-function getUser() {
-  //check if local storage has user data
-  let previousUsers = JSON.parse(localStorage.getItem('leaderboard'));
-  //if yes, parse user data
-  if (previousUsers) {
-    console.log('this is previous users', previousUsers);
-    leaderboard = previousUsers;
-  } else{
-    leaderboard = [];
+// Checks for existing user. If no existing user, User gets called and a new User object is created and stored in leaderboard array.
+function enterUsername(e) {
+  e.preventDefault();
+  
+  let clickedPlay = e.target.name.value;
+  console.log(`clickedPlay: ${clickedPlay}`);
+  
+  let existingLeaderboard = getLeaderboard();
+
+  if (existingLeaderboard.some(user => user.name === clickedPlay)) {
+    console.log(`Welcome back ${clickedPlay}!`);
+    alert(`Welcome back ${clickedPlay}!`);
   }
-}
-
-// save user to local storage
-function storeUser(previousBoard) {
-  let stringifiedLeaderboard = JSON.stringify(leaderboard);
-  //create an array to store all users
-  // console.log('line34', previousBoard)
-  // console.log('line35', previousBoard.push(stringifiedLeaderboard[0]))
-  localStorage.setItem('leaderboard', stringifiedLeaderboard);
-}
-
-
-// event handler (enter user to leaderboard or pull high score from local storage)
-function handleSubmit(event) {
-  event.preventDefault();
-  let clickedPlay = event.target.name.value;
-  console.log(clickedPlay);
-  if (leaderboard.some(user => user.name === clickedPlay)) {
-    alert(`Welcome back ${clickedPlay}`);
-  }else {
-    alert(`Welcome ${clickedPlay}`);
+  else {
+    console.log(`Welcome ${clickedPlay}`);
     new User(clickedPlay);
+    // console.log(`existingLeaderboard: ${existingLeaderboard}`);
+    // console.log(`leaderboard: ${leaderboard}`);
+    alert(`Welcome ${clickedPlay}`);
   }
-  let previousUsers = getUser();
-   console.log('got previousUsers', previousUsers);
-  storeUser(previousUsers);
+  storeLeaderboard();
+  goToGame();
 }
 
-// event handler (take user to gameplay page)
-function goToGame(event) {
-  event.preventDefault();
-
+// Gets existing leaderboard from local storage and sets existing leaderboard array to equal the values of storedLeaderboard
+function getLeaderboard() {
+  let storedLeaderboard = JSON.parse(localStorage.getItem('localStorageLeaderboard')) || [];
+  // console.log(`storedLeaderboard: ${storedLeaderboard}`);
+  leaderboard = storedLeaderboard;
+  return storedLeaderboard;
 }
 
+// Store leaderboard, not just user info
+function storeLeaderboard() {
+  let strLeaderboard = JSON.stringify(leaderboard);
+  localStorage.setItem('localStorageLeaderboard', strLeaderboard);
+}
 
-userSubmit.addEventListener('submit', handleSubmit);
-userSubmit.addEventListener('submit', goToGame);
+// Launches game in same window/tab
+function goToGame() {
+  location.href = "../html/game.html";
+}
+
+// Event Handeler
+userSubmit.addEventListener('submit', enterUsername);
