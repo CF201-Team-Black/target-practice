@@ -23,7 +23,7 @@ header img {
 
 header div {
   width: 100%;
-  height: 200px;
+  /* height: 200px; */
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -31,17 +31,24 @@ header div {
 }
 
 h1 {
-  margin: auto;
-  font-family: 'Alfa Slab One', serif;
-  font-size: 4em;
+  font-size: 4em; ;
+  margin: 0.5% 0;
   text-align: center;
-  color: black;
+  font-family: 'Alfa Slab One', serif;
+  display: flex;
+  align-items: center;
   text-shadow: 1px 1px 1px green;
+}
+
+h1 #target-logo {
+  align-self: center;
+  height: 80px;
+  width: 80px;
 }
 
 nav {
   margin: auto;
-  width: 75%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
 }
@@ -50,11 +57,11 @@ nav ul {
   width: 100%;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 
 ul li {
-  margin: auto;
+  margin: 15px;
 }
 
 a {

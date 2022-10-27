@@ -38,7 +38,6 @@ header h1 {
 }
 
 h1 #target-logo {
-  z-index: -1;
   height: 80px;
   align-self: center;
 }
