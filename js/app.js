@@ -77,7 +77,7 @@ function getCurrentUser() {
 
 // Launches game in same window/tab
 function goToGame() {
-  location.href = "../html/game.html";
+  location.href = "html/game.html";
 }
 
 // Event Handeler
