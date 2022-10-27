@@ -98,9 +98,9 @@ function genTopTen () {
   let topTenName = document.getElementById('leaderboardName');
   topTenName.textContent = '';
   // let topTenScore = document.getElementById('leaderboardScore');
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < sortedLeaderboard.length && i < 10; i++) {
     let lbName = document.createElement('li');
-    lbName.textContent = `${sortedLeaderboard[i].name} : ${sortedLeaderboard[i].score}`;
+    lbName.textContent = `${sortedLeaderboard[i].name}: ${sortedLeaderboard[i].score}`;
     topTenName.appendChild(lbName);
     // let lbScore = document.createElement('li');
     // lbScore.textContent = sortedLeaderboard[i].score;
