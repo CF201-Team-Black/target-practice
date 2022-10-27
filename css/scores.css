@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  outline: 1px solid red;
+  outline-offset: -1px;
 }
 
 #background {
@@ -17,7 +18,7 @@ header {
 
 header img {
   height: 7rem;
-  width: 9rem;
+  /* width: 9rem; */
 }
 
 header div {
@@ -27,6 +28,7 @@ header div {
 
 h1 {
   margin: auto;
+  font-family: 'Alfa Slab One', serif;
   font-weight: bolder;
   font-size: xx-large;
   text-align: center;
@@ -71,4 +73,7 @@ main li {
 
 footer {
   text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
