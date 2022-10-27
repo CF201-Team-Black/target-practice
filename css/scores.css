@@ -33,7 +33,8 @@ h1 {
   font-size: xx-large;
   text-align: center;
   padding-bottom: .5rem;
-  color: darkolivegreen;
+  color: black;
+  text-shadow: 1px 1px 1px green;
 }
 
 nav ul {
@@ -44,13 +45,16 @@ nav ul {
 }
 
 a {
-  color: rgb(131, 110, 83);
+  font-family: 'Press Start 2P', serif;
+  background-color: black;
+  color: green;
   text-decoration: none;
+  border: 2px outset lightgray;
 }
 
 a:hover {
-  color: darkred;
-  font-size: large;
+  color: white;
+  border-style: inset;
 }
 
 main {

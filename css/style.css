@@ -3,7 +3,7 @@
 }
 
 /* for the pixelated font 
-font-family: 'Press Start 2P', cursive;
+font-family: 'Press Start 2P', serif;
 */
 
 body {
@@ -57,7 +57,7 @@ li {
 }
 
 .page-links {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', serif;
   color: brown;
   text-decoration: none;
   padding: 10px;
@@ -76,7 +76,7 @@ form {
 }
 
 .form-text {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Press Start 2P', serif;
   padding: 10px;
   text-align: center;
 }
@@ -98,6 +98,7 @@ button {
 button:hover {
   color: white;
   cursor: url('../img/crosshairs10px.png') 5 5, auto;
+  border: 2px inset lightgray;
 }
 
 footer {
