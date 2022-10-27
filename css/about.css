@@ -1,3 +1,8 @@
+/* * {
+    outline: 1px solid red;
+  outline-offset: -1px;
+} */
+
 #background{
     position: fixed;
     height: 100vh;
@@ -5,18 +10,14 @@
     z-index: -1;
 }
 
-h1{
-   /*display: inline-block;*/
-    width: 70%; 
-    font-size: 75px;
-    text-align: center;
+header{
+    margin-bottom: 50px;
+    display: flex;
 }
-
-
 
 header img{
-width: 200px;
-}
+    width: 200px;
+    }
 
 #banner{
     display:flex;
@@ -24,13 +25,26 @@ width: 200px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-nav{
-    width: 25%;
-    border: 1px solid black;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+}
+
+h1{
+    /*display: inline-block;*/
+     width: 100%; 
+     font-family: 'Alfa Slab One', serif;
+     font-size: 4em;
+     text-align: center;
+     color: black;
+     text-shadow: 1px 1px 1px green;
+ }
+
+nav{
+    /* width: 25%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: auto;
 }
 nav ul{
     display: flex;
@@ -41,31 +55,50 @@ nav ul{
 nav ul li{
     margin-left: 20px;
     margin-right: 20px;
+    padding: 10px;
 }
+
 a{
+    border: 2px outset lightgray;
+    font-family: 'Press Start 2P', serif;
+    font-size: 0.75em;
     text-decoration: none;
-    color: black;
+    background-color: black;
+    color:green;
+    cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+    padding: 6px;
 }
+
 a:hover{
-    color: red;
+    color: white;
+    border-style: inset;
 }
 
-
-header{
-    margin-bottom: 50px;
+main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 main div{
     display: flex;
     text-align: left;
     align-items: center;
     margin-bottom: 50px;
-    max-width: 1000px;
+    width: 80%;
     font-size: 20px;
     justify-content: center;
+    background-color: rgba(112, 128, 144, 0.223);
+    border-radius: 15px;
+    box-shadow: 0 0 5px 10px rgba(112, 128, 144, 0.223);
+
 }
 main div img{
     margin-right: 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 400px;
+}
+
+footer {
+    text-align: center;
 }
