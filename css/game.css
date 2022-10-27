@@ -188,12 +188,14 @@ main {
 }
 
 #rulesLeft h3, #leaderboardRight h3 {
-  color: black;
+  padding: 8px 0px;
+  color: green;
   text-decoration: underline;
 }
 
 #rulesLeft li {
-  padding: 5%;
+  padding: 5% 2.5%;
+  text-align: left;
 }
 
 #leaderboardRight li {
