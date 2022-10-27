@@ -1,7 +1,7 @@
-* {
+/* * {
   outline: 1px solid red;
   outline-offset: -1px;
-}
+} */
 
 #background {
   position: fixed;
@@ -11,45 +11,61 @@
 }
 
 header {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex: wrap;
+  margin-bottom: 3em;
 }
 
 header img {
-  height: 7rem;
-  /* width: 9rem; */
+  width: 200px;
 }
 
 header div {
   width: 100%;
-  padding: 1rem;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   margin: auto;
   font-family: 'Alfa Slab One', serif;
-  font-weight: bolder;
-  font-size: xx-large;
+  font-size: 4em;
   text-align: center;
-  padding-bottom: .5rem;
   color: black;
   text-shadow: 1px 1px 1px green;
 }
 
+nav {
+  margin: auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
 nav ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-around; */
+}
+
+ul li {
+  margin: auto;
 }
 
 a {
-  font-family: 'Press Start 2P', serif;
-  background-color: black;
-  color: green;
-  text-decoration: none;
   border: 2px outset lightgray;
+  font-family: 'Press Start 2P', serif;
+  font-size: 0.75em;
+  text-decoration: none;
+  background-color: black;
+  color:green;
+  cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+  padding: 6px;
 }
 
 a:hover {
@@ -58,21 +74,43 @@ a:hover {
 }
 
 main {
-  margin-left: 7rem;
+  margin: auto;
+  width: 50%;
+  background-color: rgba(112, 128, 144, 0.746);
+  border: 5px ridge lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h2 {
-  margin: 0 0 1rem 0;
-  padding: .5rem 0;
-  font-weight: bold;
-  font-size: x-large;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Press Start 2P', serif;
+  text-shadow: 1px 1px 1px green;
+  font-size: xx-large;
   text-align: center;
 }
 
-main li {
-  padding: .5rem;
+ol {
+  width: 75%;
   text-align: center;
-  color: darkorange
+  background-color: black;
+  color: green;
+  font-family: 'Press Start 2P', serif;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 10px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+main li {
+  padding: 10px;
+  text-align: center;
+  /* background-color: black;
+  color: green; */
+  font-family: 'Press Start 2P', serif;
 }
 
 footer {

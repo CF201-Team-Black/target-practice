@@ -60,12 +60,6 @@ ul {
   justify-content: space-between;
 }
 
-nav li:hover {
-  color: white;
-  background-color: rgb(33, 33, 33);
-  border-style: inset;
-}
-
 nav li {
   display: inline-flex;
   background-color: black;
@@ -76,6 +70,12 @@ nav li {
   font-family: 'Press Start 2P', cursive;
 }
 
+nav li:hover {
+  color: white;
+  background-color: rgb(33, 33, 33);
+  border-style: inset;
+}
+
 nav a:link {
   text-decoration: none;
   /* width: 170px;
@@ -84,6 +84,7 @@ nav a:link {
   color:green;
   cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
   font-size: 0.5em;
+  padding: 3px;
 }
 
 nav a:link:hover {
