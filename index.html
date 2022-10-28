@@ -7,13 +7,38 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- TO ADD GOOGLE FONT
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alkalami">
-    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     
-    <title> <!-- title goes here --> </title>
+    <title> Target Practice! </title>
 </head>
 <body>
+
+    <img id="background" src="img/background.png" alt="country field">
+
+    <main id="container">
+        <div id="logo-container">
+            <img id="logo" src="img/target-practice.svg" alt="Game Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="page-links" href="html/scores.html">LEADERBOARD</a></li>
+                <li><a class="page-links" href="html/about.html">ABOUT THE CREATORS</a></li>
+            </ul>
+        </nav>
+        <form id="button">
+            <label>
+                <input class="form-text" type="text" name="name" placeholder="ENTER USERNAME" required>
+            </label>
+            <button  class="form-text" type="submit">PLAY GAME</button>
+        </form>
+    </main>
+
+    <footer>
+        &copy; Code Fellows  &middot; Gordon P Reilley Jr &middot; Keyan Tabor &middot; Ian F Shirley &middot; Harper Foley &middot; 2022
+    </footer>
+
 
 <script src="js/app.js"></script>
 </body>

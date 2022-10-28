@@ -1,0 +1,128 @@
+/* * {
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
+
+#background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3em;
+}
+
+header img {
+  width: 200px;
+}
+
+header div {
+  width: 100%;
+  /* height: 200px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em; ;
+  margin: 0.5% 0;
+  text-align: center;
+  font-family: 'Alfa Slab One', serif;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 1px green;
+}
+
+h1 #target-logo {
+  align-self: center;
+  height: 80px;
+  width: 80px;
+}
+
+nav {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul li {
+  margin: 15px;
+}
+
+a {
+  border: 2px outset lightgray;
+  font-family: 'Press Start 2P', serif;
+  font-size: 0.75em;
+  text-decoration: none;
+  background-color: black;
+  color:green;
+  cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+  padding: 6px;
+}
+
+a:hover {
+  color: white;
+  border-style: inset;
+}
+
+main {
+  margin: auto;
+  width: 50%;
+  background-color: rgba(112, 128, 144, 0.746);
+  border: 5px ridge lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: auto;
+  padding: 20px;
+  font-family: 'Press Start 2P', serif;
+  text-shadow: 1px 1px 1px green;
+  font-size: xx-large;
+  text-align: center;
+}
+
+ol {
+  width: 75%;
+  text-align: center;
+  background-color: black;
+  color: green;
+  font-family: 'Press Start 2P', serif;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 10px black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+main li {
+  padding: 10px;
+  text-align: center;
+  /* background-color: black;
+  color: green; */
+  font-family: 'Press Start 2P', serif;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

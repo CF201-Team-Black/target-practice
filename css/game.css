@@ -1,0 +1,213 @@
+/* For highlight all elements with a red border for ease of formatting with CSS */
+
+/* * { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
+
+:root {
+  --first-x-position: 720px;
+  --second-x-position: 75px;
+  --third-x-position: 600px;
+  --fourth-x-position: 0px;
+}
+
+body { 
+  background-color: black;
+  color: green;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;}
+
+/* Header Area */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4em; ;
+  margin: 0.5% 0;
+  text-align: center;
+  font-family: 'Alfa Slab One', serif;
+  display: flex;
+  align-items: center;
+}
+
+h1 #target-logo {
+  height: 80px;
+  align-self: center;
+}
+
+nav {
+  font-size: large;
+  font-weight: bold;
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  padding-right: 20px;
+}
+
+ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-flex;
+  background-color: black;
+  /* margin: 0.5% 0; */
+  margin-bottom: 15px;
+  padding: 0.25rem;
+  border: 2px outset lightgray;
+  font-family: 'Press Start 2P', cursive;
+}
+
+nav li:hover {
+  color: white;
+  background-color: rgb(33, 33, 33);
+  border-style: inset;
+}
+
+nav a:link {
+  text-decoration: none;
+  /* width: 170px;
+  margin-left: 15px;
+  margin-right: 15px; */
+  color:green;
+  cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+  font-size: 0.5em;
+  padding: 3px;
+}
+
+nav a:link:hover {
+  color: white;
+}
+
+nav a:visited {
+  text-decoration: none;
+  color:green;
+}
+
+
+/* Game Section */
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#playArea {
+  /* position: relative; */
+  cursor: url('../img/crosshairs10px.png') 5 5, crosshair;
+  position: relative;
+  width: 1000px;
+}
+
+#background {
+  min-height: 400px;
+  /* height: 100%; */
+  z-index: 0;
+  width: 1000px;
+  -webkit-user-drag: none;
+}
+
+#scoreboard {
+  z-index: 1;
+  width: 20%;
+  bottom: 5%;
+  left: 1%;
+  position: absolute;
+  border: 3px inset rgb(187, 187, 187);
+  background-color: black;
+  font-weight: bold;
+  padding: 0.5%;
+  text-align: center;
+  font-family: 'Press Start 2P', serif;
+}
+
+/* bird/target & animation */
+#target {
+  z-index: 2;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: none;
+  -webkit-user-drag: none;
+  animation: zigzag 30s ease-in-out infinite alternate;
+}
+
+@keyframes zigzag {
+  0% {
+    transform: translate(0, -100px);
+  }
+  25% {
+    transform: translate(var(--first-x-position), -225px);
+  }
+  50% {
+    transform: translate(var(--second-x-position), -350px);
+  }
+  75% {
+    transform: translate(var(--third-x-position), -475px);
+  }
+  100% {
+    transform: translate(var(--fourth-x-position), -600px);
+  }
+}
+
+#start {
+  z-index: 3;
+  position: absolute;
+  left: 25%;
+  font-size: medium;
+  font-weight: bold;
+  bottom: 7%;
+}
+
+#rulesLeft {
+  outline: 3px inset rgb(187, 187, 187);
+  outline-offset: -3px;
+  width: 15%;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+#leaderboardRight {
+  outline: 3px inset rgb(187, 187, 187);
+  outline-offset: -3px;
+  width: 15%;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+#rulesLeft h3, #leaderboardRight h3 {
+  padding: 8px 0px;
+  color: green;
+  text-decoration: underline;
+}
+
+#rulesLeft li {
+  padding: 5% 2.5%;
+  text-align: left;
+}
+
+#leaderboardRight li {
+  padding: 5%;
+}
+
+/* Footer */
+footer {
+  /* border: solid black 3px; */
+  text-align: center;
+  margin-top: 1%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
