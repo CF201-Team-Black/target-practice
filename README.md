@@ -2,7 +2,7 @@
 
 ## Target Practice
 
-A JavaScript based game where the goal is to shoot down ducks. Based on the Nintendo classic "Duck Hunt", our game pays homage to a true classic while also flexing the teams skills at HTML, CSS, and  vanilla JavaScript.
+Have you ever been bored at your computer? Sometimes you just need a break from the day-to-day grind of writing requirements docs and want to have some fun. Welcome "Target Practice", a JavaScript based game where the goal is to shoot down ducks. Based on the Nintendo classic "Duck Hunt", our game pays homage to a true classic while also flexing the teams skills at HTML, CSS, and vanilla JavaScript. Compete against players from around the globe and see how high you can score!
 
 ### Authors
 
